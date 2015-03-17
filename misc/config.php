@@ -108,7 +108,7 @@
 	// *** Sphinx search plugin ***
 	// ****************************
 
-    define('SPHINX_SERVER', getenv('OPENSHIFT_PHP_IP').":15000");
+    	define('SPHINX_SERVER', getenv('OPENSHIFT_PHP_IP').":15000");
 	// Hostname:port combination for the Sphinx server.
 
 	define('SPHINX_INDEX', getenv('OPENSHIFT_APP_NAME') . ",delta");
@@ -176,10 +176,10 @@
 	// ***************************************
 	// *** Other settings (less important) ***
 	// ***************************************
-
-	define('CHECK_FOR_NEW_VERSION', true);
-	// Check for new versions of tt-rss automatically.
-
+	
+	define('CHECK_FOR_UPDATES', true);
+	// Check for updates automatically if running Git version
+	
 	define('DETECT_ARTICLE_LANGUAGE', false);
 	// Detect article language when updating feeds, presently this is only
 	// used for hyphenation. This may increase amount of CPU time used by 
